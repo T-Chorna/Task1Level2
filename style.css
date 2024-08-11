@@ -1,0 +1,334 @@
+html{
+  scroll-behavior: smooth;
+}
+p, ol{
+  margin: 0;
+}
+
+
+.section{
+  border: 4px dashed #356e00;
+  padding: 8px;
+  display: none;
+}
+.active-section{
+  display: block;
+}
+
+.condition{
+  margin-bottom: 20px;
+}
+
+.black-square{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin-right: 20px;
+}
+
+.btn{
+  padding: 2px 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: darkgray;
+  cursor: pointer;
+}
+.btn:hover{
+  box-shadow: 1px 1px gray;
+  color: black;
+}
+.hidden{
+  display: none;
+}
+/**********************
+=        Task 1-2       =
+**********************/
+#solution-task-1{
+  display: flex;
+  align-items: center;
+}
+#btn-container-first{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/**********************
+=        Task 3       =
+**********************/
+
+#five-squares-conteiner{
+  display: flex;
+}
+.squares-second-section{
+  margin-right: 20px;
+  margin-bottom: 8px;
+}
+
+
+/**********************
+=        Task 4       =
+**********************/
+
+
+#input-section-form{
+  display: flex;
+  flex-direction: column;
+
+}
+#input-selector-label{
+  margin: 8px;
+  font-size: 18px;
+  color: #292929;
+}
+#input-selector{
+  width: 250px;
+  margin-bottom: 12px;
+}
+
+
+/**********************
+=        Task 5       =
+**********************/
+#yellow-square{
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  cursor: pointer;
+}
+/**********************
+=        Task 6       =
+**********************/
+#red-square{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  margin-bottom: 8px;
+}
+
+/**********************
+=        Task 7       =
+**********************/
+
+#solution-task7{
+  display: flex;
+}
+#green-rectangle{
+  margin-left: 8px;
+  width: 50px;
+  height: 20px;
+  background-color: green;
+  display: none;
+}
+
+/**********************
+=        Task 8       =
+**********************/
+
+#form-find-img{
+  display: flex;
+  flex-direction: column;
+}
+
+#label-url-image{
+  margin: 8px;
+  font-size: 18px;
+  color: #292929;
+}
+
+#url-image{
+  max-width: 50%;
+  margin-bottom: 4px;
+}
+#url-image-btn{
+  max-width: 50%;
+}
+#img-container{
+  width: 100px;
+}
+
+/**********************
+=        Task 9       =
+**********************/
+#input-url-imgs{
+  min-width: 70%;
+}
+#images-container{
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/**********************
+=        Task 10-12       =
+**********************/
+
+#task10-12{
+  max-width: 70%;
+}
+#coord-container{
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 4px 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(35, 36, 122);
+  background-color: aliceblue;
+  border: 1px solid rgb(35, 36, 122);
+  border-radius: 8px;
+}
+/**********************
+=        Task 13      =
+**********************/
+#editable-blocks-container{
+  display: flex;
+  justify-content: space-between;
+}
+.editable-block{
+  font-size: 18px;
+  font-weight: 600;
+  color: #292b4d;
+  border: 1px solid #292b4d;
+  border-radius: 8px;
+  padding: 4px 12px;
+  width: 28%;
+}
+/**********************
+=        Task 14      =
+**********************/
+
+#task14{
+  min-height: 300vh;
+}
+#btn-scroll-up{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 4px 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: darkgray;
+  cursor: pointer;
+  display: none;
+  text-decoration: none;
+  border: 1px solid darkgray;
+  background-color: white;
+}
+
+#btn-scroll-up:hover{
+  border-color: black;
+  box-shadow: 1px 1px gray;
+  color: black;
+}
+
+/**********************
+=        Task 15      =
+**********************/
+
+#big-block{
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: aqua;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  cursor: pointer;
+  position: relative;
+}
+
+#small-block{
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+/**********************
+=        Task 16      =
+**********************/
+#task16{
+  min-height: 300vh;
+}
+#grey-mask{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #50505071;
+  display: none;
+}
+
+/**********************
+=        Task 18      =
+**********************/
+.file-drop-area {
+  width: 100%;
+  max-width: 400px;
+  padding: 25px;
+  border: 2px dashed #6c757d;
+  border-radius: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.dragover {
+  background-color: #e9ecef;
+  border-color: #007bff;
+}
+
+#file-input{
+  display: none;
+}
+
+#file-message {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+#file-message.selected {
+  color: #007bff;
+}
+
+#file-icon {
+  font-size: 48px;
+  color: #6c757d;
+}
+
+
+/**********************
+=     Pagination      =
+**********************/
+
+#pagination-btns-container{
+  display: flex;
+  justify-content: center;
+}
+#btn-previous-section{
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 100px solid #c9e2b2;
+  /* cursor: pointer; */
+  cursor: auto;
+  margin: 20px;
+}
+
+#btn-next-section{
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 100px solid #356e00;
+  cursor: pointer;
+  margin: 20px;
+}
+
